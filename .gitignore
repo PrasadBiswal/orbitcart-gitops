@@ -1,0 +1,22 @@
+# Secrets: never commit plain Kubernetes Secrets or local env
+.env
+.env.*
+*.pem
+*.key
+*-secret.yaml
+*.decrypted.yaml
+
+# Helm
+charts/*/charts/
+*.tgz
+
+# Rendered output from local testing
+rendered/
+tmp/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
